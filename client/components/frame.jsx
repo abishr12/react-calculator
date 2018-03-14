@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Screen from './screen.jsx';
 import Button from './button.jsx';
+import PropTypes from 'prop-types';
 
 class Frame extends Component {
 

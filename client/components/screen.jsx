@@ -1,7 +1,9 @@
 import React from 'react';
 import ScreenRow from './screenRow.jsx';
+import PropTypes from 'prop-types';
 
-const Screen = (...props) => {
+const Screen = props => {
+    
   return (
     <div className='screen'>
       <ScreenRow value={props.question}/>
@@ -12,8 +14,8 @@ const Screen = (...props) => {
 
 // Define our props expected from the parent component
 Screen.propTypes = {
-    question: React.PropTypes.string.isRequired,
-    answer: React.PropTypes.string.isRequired
+    question: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired
 }
 
 
